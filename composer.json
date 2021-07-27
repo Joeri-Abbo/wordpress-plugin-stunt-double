@@ -1,0 +1,25 @@
+{
+    "name": "joeri-abbo/stunt-double",
+    "type": "wordpress-plugin",
+    "description": "Why fill a demo env if you can automatically fill it",
+    "keywords": ["wp", "wp-plugin", "plugin"],
+    "authors": [
+        {
+            "name":     "Joeri Abbo",
+            "email":    "joeriabbo@hotmail.com",
+            "homepage": "https://nl.linkedin.com/in/joeri-abbo-43a457144",
+            "role":     "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "StuntDouble\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "require": {
+        "fakerphp/faker": "^1.15"
+    }
+}
