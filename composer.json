@@ -2,7 +2,7 @@
     "name": "joeri-abbo/stunt-double",
     "type": "wordpress-plugin",
     "description": "Why fill a demo env if you can automatically fill it",
-    "keywords": ["wp", "wp-plugin", "plugin"],
+    "keywords": ["wp", "wp-plugin", "plugin", "wp-cli", "tool", "wordpress", "automation"],
     "authors": [
         {
             "name":     "Joeri Abbo",

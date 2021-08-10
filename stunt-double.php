@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Stunt Double 🚀
- * Description: Add plugin to fake your content
+ * Description: Add plugin to fake your content. Keep it lazy and typo free
  * Text Domain: stunt-double
  *
  * Author: Joeri Abbo
@@ -29,7 +29,7 @@ class stuntDouble
 {
 
 	public const STUNTDOUBLE_TEXT_DOMAIN = 'stunt-double';
-	public const STUNTDOUBLE_PREFIX      = 'stunt-double';
+
 	/**
 	 * Setup stunt double for faking 🚀
 	 */

@@ -8,12 +8,15 @@ class Link extends Base
 {
 	public const FIELD = 'link';
 
-	public function getValue()
+	/**
+	 * Get value for field.
+	 * @return array
+	 */
+	public function getValue(): array
 	{
 		return [
 			'url'   => $this->faker->url(),
 			'title' => 'More information',
 		];
 	}
-
 }

@@ -1,6 +1,6 @@
 <?php
 /*
- * Helper functions for spaceship
+ * Helper functions for stunt-double
  */
 
 use StuntDouble\StuntDoubleFiller;
@@ -20,7 +20,7 @@ if (class_exists('WP_CLI')) {
 	WP_CLI::add_command('stuntDouble', function ($args, $assoc_args) {
 		try {
 			$post_type = $args[0];
-			$amount = !empty($assoc_args['amount']) ? $assoc_args['amount'] : 10;
+			$amount    = ! empty($assoc_args['amount']) ? $assoc_args['amount'] : 10;
 			WP_CLI::line(__('Start stunt double lets start the filling', StuntDouble::STUNTDOUBLE_TEXT_DOMAIN));
 
 			$stuntDouble = new StuntDoubleFiller($post_type, $amount);
@@ -31,7 +31,6 @@ if (class_exists('WP_CLI')) {
 		} catch (Exception $e) {
 			WP_CLI::error(__('Woops something went wrong.',
 				StuntDouble::STUNTDOUBLE_TEXT_DOMAIN));
-			\Sentry\captureMessage($e, \Sentry\Severity::error());
 		}
 	});
 }
