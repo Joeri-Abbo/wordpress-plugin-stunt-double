@@ -26,7 +26,7 @@ class Base
 	 */
 	protected $field;
 
-	public function __construct(array $field, $faker, int $post_id = null)
+	public function __construct(array $field, $faker, ?int $post_id = null)
 	{
 		$this->faker   = $faker;
 		$this->field   = $field;
